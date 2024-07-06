@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Floated Divs Example</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+  .left {
+    float: left;
+    width: 50%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .right {
+    float: right;
+    width: 50%;
+    background-color: #e0e0e0;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .footer {
+    clear: both; 
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h2>Left Div (Float Left)</h2>
+      <p>This div is floated to the left.</p>
+    </div>
+    <div class="right">
+      <h2>Right Div (Float Right)</h2>
+      <p>This div is floated to the right.</p>
+    </div>
+    <div class="footer">
+      <h2>Footer (Clearfix)</h2>
+      <p>This is the footer content.</p>
+    </div>
+  </div>
+</body>
+</html>
