@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tree Styles</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 10px;
+  }
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  h1 {
+    color: #333;
+    text-align: center;
+  }
+  p {
+    color: #666;
+    line-height: 1.6;
+  }
+  .tree {
+    font-weight: bold;
+    color: #4caf50; /* Green */
+  }
+</style>
+
+</head>
+<body>
+  <div class="container">
+    <h1>Tree Styles</h1>
+    
+    <!-- Inline CSS -->
+    <p style="color: #ff6347; font-style: italic;">
+      This text is styled using <span class="tree">inline CSS</span>.
+    </p>
+
+    <!-- Internal CSS -->
+    <p class="tree">
+      This paragraph is styled using <span style="font-weight: normal;">internal CSS</span>.
+    </p>
+
+    <p>
+      This paragraph is styled using <span class="tree">external CSS</span>.
+    </p>
+  </div>
+</body>
+</html>
