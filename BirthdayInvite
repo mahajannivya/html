@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birth Invitation</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 20px;
+  }
+  .invitation {
+    background-color: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  h1 {
+    color: #d848b6; 
+  }
+  p {
+    color: #13932f; 
+    line-height: 1.6;
+  }
+  .date {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #1968c2; 
+  }
+  form {
+    margin-top: 20px;
+    text-align: left; 
+  }
+  input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  input[type="submit"] {
+    background-color: #66c1b6; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  input[type="submit"]:hover {
+    background-color: #4caaa0;
+  }
+</style>
+</head>
+<body>
+  <div class="invitation">
+    <h1>Birth Celebration Invitation</h1>
+    <p>You're invited to celebrate the birth of our baby!</p>
+    <p>Date: December 4th</p>
+    <p>Time: 5.00pm</p>
+    <p>Location: Great banquet hall</p>
+    <p>Please join us for a joyous occasion.</p>
+    <div class="date">4th December</div>
+
+    <form id="messageForm">
+      <label for="senderName">Your Name:</label><br>
+      <input type="text" id="senderName" name="senderName" required><br>
+      
+      <label for="senderMessage">Your Message:</label><br>
+      <textarea id="senderMessage" name="senderMessage" rows="4" required></textarea><br>
+      
+      <input type="submit" value="Send Message">
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('messageForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      var senderName = document.getElementById('senderName').value;
+      var senderMessage = document.getElementById('senderMessage').value;
+      
+      alert(`Thank you, ${senderName}! Your message "${senderMessage}" has been sent.`);
+      
+      document.getElementById('senderName').value = '';
+      document.getElementById('senderMessage').value = '';
+    });
+  </script>
+</body>
+</html>
+
