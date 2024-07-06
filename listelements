@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIST ELEMENTS </title>
+</head>
+<style>
+    div{
+        width: 700px;
+       background-attachment: fixed;
+        background-color: aqua;
+        padding: 20px;
+        outline: auto;
+        outline-width: 10px;
+        outline-color: rgb(52, 93, 140);
+        outline-style: inset;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    img{
+        width: 500px;
+        margin: auto;
+        border: 20px;
+        outline: auto;
+        outline-width: 15px;
+        outline-color: rgb(171, 45, 160);
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+<body>
+    <h1 style="color: rgb(35, 35, 117); text-align: center; font-style: italic;" > Receipe for Ice-Cream</h1>
+   <div>Ice cream is a frozen dessert typically made from milk or cream that has been flavoured with a sweetener, either sugar or an alternative, and a spice, such as cocoa or vanilla, or with fruit, such as strawberries or peaches. Food colouring is sometimes added in addition to stabilizers.
+</div>
+   <br>
+   <a href="https://www.milkmaid.in/"></a>
+   <br>
+   <img src="download.jpeg" alt=" image" title="Ice-Cream">
+   <br>
+   <ol >
+    <b>The most rated ice cream flavours</b>
+    <li>Vanilla</li>
+    <li>Chocolate</li>
+    <li>Butterscotch</li>
+     </ol>
+ <frames>
+    <fieldset>
+        <legend>food</legend>
+    <caption>enter ur favourite</caption>
+    <input type="name" placeholder="vanilla"></input>
+    <caption>enter ur ratings</caption>
+ <input type="number" placeholder="ratings"></input>
+    <button type=" submit">Submit</button>
+    </fieldset2>
+ </frames>
+  </body>
+</html>
