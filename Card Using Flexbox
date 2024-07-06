@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puppy Cards</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 20px;
+  }
+  
+  .card {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 100%;
+    }
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card h2 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <img src="https://placeimg.com/400/300/animals" alt="Puppy 1">
+      <div class="card-content">
+        <h2>Cute Puppy 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum, leo eget viverra sodales, nulla augue malesuada libero.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://placeimg.com/400/300/animals/grayscale" alt="Puppy 2">
+      <div class="card-content">
+        <h2>Adorable Puppy 2</h2>
+        <p>Nullam ultrices diam a ultricies varius. Fusce quis sapien eget ante congue mollis nec vel tortor.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://placeimg.com/400/300/animals/sepia" alt="Puppy 3">
+      <div class="card-content">
+        <h2>Sweet Puppy 3</h2>
+        <p>Vestibulum ultricies urna et urna convallis, ac ullamcorper neque tincidunt. Suspendisse id felis consectetur, vestibulum justo in, fringilla arcu.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
