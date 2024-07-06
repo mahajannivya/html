@@ -1,0 +1,59 @@
+DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ranking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .movie {
+            margin-bottom: 10px;
+        }
+        .movie input[type="text"] {
+            width: 200px;
+            margin-right: 10px;
+        }
+        .movie input[type="number"] {
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rate Your Favorite Movies</h1>
+    <div class="movie">
+        <input type="text" placeholder="Enter movie title">
+        <input type="number" min="1" max="10" placeholder="Rating">
+    </div>
+    <div class="movie">
+        <input type="text" placeholder="Enter movie title">
+        <input type="number" min="1" max="10" placeholder="Rating">
+    </div>
+    <div class="movie">
+        <input type="text" placeholder="Enter movie title">
+        <input type="number" min="1" max="10" placeholder="Rating">
+    </div>
+    <button onclick="submitRankings()">Submit Rankings</button>
+
+    <script>
+        function submitRankings() {
+            const movies = document.querySelectorAll('.movie');
+            let rankings = [];
+            movies.forEach(movie => {
+                const title = movie.querySelector('input[type="text"]').value;
+                const rating = movie.querySelector('input[type="number"]').value;
+                if (title && rating) {
+                    rankings.push({ title, rating });
+                }
+            });
+            console.log(rankings);
+            alert('Rankings submitted!');
+        }
+    </script>
+</body>
+</html>
