@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox Template - About Ice Cream</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .main-container {
+    display: flex;
+    flex: 1;
+  }
+  
+  .sidebar {
+    background-color: #f0f0f0;
+    padding: 10px;
+    min-width: 200px;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Header</h1>
+  </header>
+  
+  <div class="main-container">
+    <aside class="sidebar">
+      <h2>Sidebar</h2>
+      <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+      </ul>
+    </aside>
+    
+    <main class="content">
+      <h2>About Ice Cream</h2>
+      <p>Ice cream is a frozen dessert made from cream, sugar, and often flavored with fruits or other ingredients. It is typically enjoyed as a treat or dessert and comes in various flavors and forms, such as scoops, cones, or sundaes.</p>
+      <p>There are many variations of ice cream around the world, including gelato, sorbet, and frozen yogurt, each with its own unique texture and taste.</p>
+    </main>
+  </div>
+  
+  <footer>
+    <p>Footer</p>
+  </footer>
+</body>
+</html>
