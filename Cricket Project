@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cricket Project</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  h1 {
+    color: #333;
+  }
+  p {
+    color: #666;
+    line-height: 1.6;
+  }
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  ul {
+    text-align: left;
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+  iframe {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Cricket Project</h1>
+    <p>Welcome to our Cricket Project page!</p>
+    
+    <h2>Teams</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Team Name</th>
+          <th>Captain</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Team A</td>
+          <td>John Doe</td>
+          <td>India</td>
+        </tr>
+        <tr>
+          <td>Team B</td>
+          <td>Jane Smith</td>
+          <td>Australia</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Upcoming Matches</h2>
+    <ul>
+      <li>Match 1: Team A vs Team B - Date: [Saturday ,29]</li>
+      <li>Match 2: Team C vs Team D - Date: [Saturday ,22]</li>  
+    </ul>
+
+    <h2>Latest Match Highlights</h2>
+    <iframe src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+  </div>
+</body>
+</html>
