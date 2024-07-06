@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Display Properties Example</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+  }
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  h1 {
+    color: #333;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  ul li {
+    margin-bottom: 10px;
+  }
+  ul li a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  ul li a:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Display Properties Example</h1>
+    <ul>
+      <li><a href="inline.html">Inline Display</a></li>
+      <li><a href="block.html">Block Display</a></li>
+      <li><a href="inline-block.html">Inline-Block Display</a></li>
+    </ul>
+  </div>
+</body>
+</html>
+
+<!-- inline.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inline Display Example</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+  }
+  .emoji {
+    display: inline;
+    font-size: 3em;
+    margin: 10px;
+  }
+</style>
+</head>
+<body>
+  <h1>Inline Display Example</h1>
+  <div class="emoji">&#127470;&#127475;</div> <!-- Indian Flag -->
+  <div class="emoji">&#127473;&#127479;</div> <!-- Romanian Flag -->
+  <div class="emoji">&#127880;</div> <!-- Hot Air Balloon -->
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Block Display Example</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+  }
+  .emoji {
+    display: block;
+    font-size: 3em;
+    margin: 10px auto;
+  }
+</style>
+</head>
+<body>
+  <h1>Block Display Example</h1>
+  <div class="emoji">&#127470;&#127475;</div> <!-- Indian Flag -->
+  <div class="emoji">&#127473;&#127479;</div> <!-- Romanian Flag -->
+  <div class="emoji">&#127880;</div> <!-- Hot Air Balloon -->
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inline-Block Display Example</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+  }
+  .emoji {
+    display: inline-block;
+    font-size: 3em;
+    margin: 10px;
+  }
+</style>
+</head>
+<body>
+  <h1>Inline-Block Display Example</h1>
+  <div class="emoji">&#127470;&#127475;</div> <!-- Indian Flag -->
+  <div class="emoji">&#127473;&#127479;</div> <!-- Romanian Flag -->
+  <div class="emoji">&#127880;</div> <!-- Hot Air Balloon -->
+</body>
+</html>
